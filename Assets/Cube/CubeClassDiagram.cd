@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RubiksCube.AxisModel">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Init" Hidden="true" />
+      <Property Name="LocalDirection" Hidden="true" />
+      <Field Name="m_attached" Hidden="true" />
+      <Field Name="m_faceRotateAnim" Hidden="true" />
+      <Field Name="m_tween" Hidden="true" />
+      <Method Name="OnDestroy" Hidden="true" />
+      <Property Name="Transform" Hidden="true" />
+      <Property Name="WorldDirection" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gAABAAAACAAAAAEAhAAAAAQAEoAAAAAAAAAGAAAQAAA=</HashCode>
+      <FileName>Assets\Cube\Scripts\AxisModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RubiksCube.CubeModel">
+    <Position X="2.25" Y="0.5" Width="1.75" />
+    <Members>
+      <Method Name="Awake" Hidden="true" />
+      <Property Name="BackColor" Hidden="true" />
+      <Property Name="DownColor" Hidden="true" />
+      <Property Name="ForwardColor" Hidden="true" />
+      <Property Name="LeftColor" Hidden="true" />
+      <Field Name="m_backColor" Hidden="true" />
+      <Field Name="m_cubeRotateAnim" Hidden="true" />
+      <Field Name="m_cubeRotateAxis" Hidden="true" />
+      <Field Name="m_downColor" Hidden="true" />
+      <Field Name="m_forwardColor" Hidden="true" />
+      <Field Name="m_leftColor" Hidden="true" />
+      <Field Name="m_rightColor" Hidden="true" />
+      <Field Name="m_tween" Hidden="true" />
+      <Field Name="m_upColor" Hidden="true" />
+      <Property Name="RightColor" Hidden="true" />
+      <Property Name="Transform" Hidden="true" />
+      <Property Name="UpColor" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAAAQAIAACAAAAgGICAAgAQAEiAAAAAAAAAQgGBFAEA=</HashCode>
+      <FileName>Assets\Cube\Scripts\CubeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RubiksCube.PieceModel">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <Members>
+      <Property Name="Colors" Hidden="true" />
+      <Property Name="Cube" Hidden="true" />
+      <Method Name="Init" Hidden="true" />
+      <Property Name="LocalDirection" Hidden="true" />
+      <Method Name="OnDestroy" Hidden="true" />
+      <Property Name="Transform" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ACABAAAgCAAAAAIAIAAAAASAAAAAAAAAAAACgAAAAAA=</HashCode>
+      <FileName>Assets\Cube\Scripts\PieceModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RubiksCube.RotateModel">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Init" Hidden="true" />
+      <Field Name="m_axises" Hidden="true" />
+      <Field Name="m_pieces" Hidden="true" />
+      <Field Name="m_temp" Hidden="true" />
+      <Method Name="OnDestroy" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQABAAAAAAAAAAEABQAAAAAAIAAAAAAAAAACAAAAAIA=</HashCode>
+      <FileName>Assets\Cube\Scripts\RotateModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RubiksCube.Example.CubeController">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="clip1" Hidden="true" />
+      <Field Name="clip2" Hidden="true" />
+      <Field Name="m_cube" Hidden="true" />
+      <Method Name="OnDestroy" Hidden="true" />
+      <Field Name="timeScale" Hidden="true" />
+      <Method Name="TryAction" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Method Name="WorldDirToViewFace" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAQBAABAAAAAAAAgAAAgAAEQAAAAAAAAAAAAgABAAAA=</HashCode>
+      <FileName>Assets\Cube\Example\Scripts\CubeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>
