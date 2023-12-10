@@ -5,6 +5,8 @@ namespace RubiksCube
     [RequireComponent(typeof(MeshRenderer))]
     public class FaceViewer : MonoBehaviour
     {
+        [SerializeField] private Face m_face;
+
         private static Color GetColor(CubeModel cube, Face face)
         {
             Color c = Color.black;
@@ -35,8 +37,7 @@ namespace RubiksCube
         public void Init(CubeModel cube, Face colors)
         {
             Material mat = GetComponent<MeshRenderer>().material;
-            Vector3 localDir = this.transform.localPosition.normalized;
-            Face face = localDir.GetFace();
+            Face face = m_face;
             Color c = Color.black;
             if ((face & colors) != 0)
                 c = GetColor(cube, face);

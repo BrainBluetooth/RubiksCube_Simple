@@ -18,9 +18,13 @@ namespace RubiksCube.Example
             return vFace;
         }
 
+        private static bool GetKeyDown(KeyCode key)
+        {
+            return Input.GetKeyDown(key);
+        }
         private bool TryAction(KeyCode key, Func<bool> act)
         {
-            return Input.GetKeyDown(key) && act();
+            return GetKeyDown(key) && act();
         }
 
         private bool TryRotateFace(Face face, bool opposite)

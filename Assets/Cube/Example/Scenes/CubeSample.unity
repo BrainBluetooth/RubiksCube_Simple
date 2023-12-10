@@ -121,6 +121,85 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &94734608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 94734612}
+  - component: {fileID: 94734611}
+  - component: {fileID: 94734610}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &94734610
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94734608}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: f27a971acf1a3a4428da1068cd57fb57, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &94734611
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94734608}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &94734612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 94734608}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 1340292739}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +228,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -224,6 +303,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -249,7 +329,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -264,7 +344,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 30
   orthographic: 0
   orthographic size: 4
   m_Depth: -1
@@ -290,12 +370,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -7.5}
+  m_LocalPosition: {x: 0, y: 0, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a5e03f9623548f48aaf1ba5df4549da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1340292739 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8522165226129212153, guid: 71940d03de4565944a008e1d9f488d18,
+    type: 3}
+  m_PrefabInstance: {fileID: 8522165226104003980}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1574247787
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,116 +448,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_upColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_upColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_upColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_upColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_backColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_backColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_backColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_downColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_downColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_downColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_leftColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_leftColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_leftColor.g
-      value: 0.49803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_leftColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_rightColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_rightColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_rightColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_rightColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_forwardColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_forwardColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_forwardColor.g
-      value: 0.49803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 267491521207964420, guid: 71940d03de4565944a008e1d9f488d18,
-        type: 3}
-      propertyPath: m_forwardColor.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7603808342056663365, guid: 71940d03de4565944a008e1d9f488d18,
         type: 3}
       propertyPath: m_CastShadows
@@ -3074,30 +3062,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_faceRotateAnim:
     m_duration: 0.125
-    m_animCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
 --- !u!114 &8522165226104003991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3112,30 +3076,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_faceRotateAnim:
     m_duration: 0.125
-    m_animCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
 --- !u!114 &8522165226104003992
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3150,30 +3090,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_faceRotateAnim:
     m_duration: 0.125
-    m_animCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
 --- !u!114 &8522165226104003993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3188,30 +3104,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_faceRotateAnim:
     m_duration: 0.125
-    m_animCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
 --- !u!114 &8522165226104003994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3226,30 +3118,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_faceRotateAnim:
     m_duration: 0.125
-    m_animCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
 --- !u!114 &8522165226104003995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3264,27 +3132,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_faceRotateAnim:
     m_duration: 0.125
-    m_animCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
